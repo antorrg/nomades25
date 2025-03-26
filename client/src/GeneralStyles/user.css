@@ -1,0 +1,13 @@
+.userStyle {
+  width: 20rem; 
+  height: 55% ; 
+  margin: 2rem;
+}
+
+@media (max-width: 768px) {
+    .userStyle {
+      min-width: 80%;
+      max-width: 85%;
+      margin:0.5rem
+    }
+  }

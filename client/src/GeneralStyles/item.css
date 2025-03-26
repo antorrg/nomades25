@@ -1,0 +1,7 @@
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100vh; /* Ajusta la altura máxima según necesites */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Evita espacios innecesarios debajo de la imagen */
+}

@@ -1,0 +1,36 @@
+
+.error-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://res.cloudinary.com/dt1lpgumr/image/upload/c_scale,w_auto/f_auto,q_auto/caba%C3%83%C2%B1a19.webp?_a=BAMAH2TE0') no-repeat center center fixed,
+                linear-gradient(0deg, rgba(91,139,241,1) 0%, rgba(38,125,222,1) 11%, rgba(6,27,48,1) 100%);   
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+  
+  .error-page  h1 {
+    font-size: 5em;
+    margin: 0;
+  }
+  .error-page  p {
+    font-size: 1.5em;
+  }
+  .error-page  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  .error-page  a:hover {
+    background: white;
+    color: #000;
+  }

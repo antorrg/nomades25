@@ -1,0 +1,37 @@
+
+.nav-link:hover,
+.nav-link:active {
+  color: #fff !important;
+  background-color: #1a73e8;
+ 
+}
+.maxNavWidht {
+  max-width: 260px;
+}
+@media (max-width: 768px) {
+  .maxNavWidht {
+    max-width: 100vw;
+  }
+}
+
+
+
+  .spinner { /*spinner personalizado*/
+    margin: 30px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 0.25rem solid #ccc; 
+    animation: spin 1s linear infinite;
+    border-bottom-color: #614ad3;
+  }
+
+  @keyframes spin {
+    from {
+    transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

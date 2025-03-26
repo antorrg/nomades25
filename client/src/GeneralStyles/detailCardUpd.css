@@ -1,0 +1,10 @@
+.formProductContainer {
+    margin-top:8%;
+    max-width: 40%
+  }
+  @media (max-width: 768px) {
+    .formProductContainer {
+      min-width: 80%;
+      max-width: 90%;
+    }
+  }

@@ -1,0 +1,28 @@
+     
+.errorMsg {
+color:red;
+font-size: large;
+font-weight:bold;
+}
+
+.imageBack {
+    height: 100%;
+    width: 100%;
+    background: url('https://res.cloudinary.com/dt1lpgumr/image/upload/c_scale,w_auto/f_auto,q_auto/caba%C3%83%C2%B1a19.webp?_a=BAMAH2TE0') no-repeat center center fixed,
+               linear-gradient(0deg, rgba(91,139,241,1) 0%, rgba(38,125,222,1) 11%, rgba(6,27,48,1) 100%);   
+  }
+  
+  .colorBack {
+      background-color: #f8f9fa;
+  }
+
+  .buttonEye {
+    background-color:transparent; 
+  border: none ;
+  border-radius:1 rem;
+  padding: 0.6em 1.2em;
+  margin: 0.3em;
+  }
+  .buttonEye :active{
+    border-color: none;
+  }

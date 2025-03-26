@@ -1,0 +1,21 @@
+.contain-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .contain-user {
+      min-width: 80%;
+      max-width: 85%;
+      margin:0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }

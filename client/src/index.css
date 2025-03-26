@@ -1,0 +1,252 @@
+@import './GeneralStyles/about.css';
+@import './GeneralStyles/admin.css';
+@import './GeneralStyles/carouselStyle.css';
+@import './GeneralStyles/contact.css';
+@import './GeneralStyles/detailCardUpd.css';
+@import './GeneralStyles/error.css';
+@import './GeneralStyles/forms.css';
+@import './GeneralStyles/item.css';
+@import './GeneralStyles/login.css';
+@import './GeneralStyles/productstyle.css';
+@import './GeneralStyles/user.css';
+@import './GeneralStyles/userComponent.css';
+@import './GeneralStyles/video.css';
+
+
+
+
+/* body {
+  background-color: bd
+} */
+/*#f8f9fa;*/
+.cover-container {
+  max-width: 42em;
+}
+.carousel-section{
+  position:relative;
+  left:0;
+}
+.coverBack {
+  margin-top:0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  -webkit-backdrop-filter: blur(10px); /* Efecto de desenfoque para Safari */
+  padding: 0.2rem;
+  border-radius: 5px; /* Bordes redondeados */
+  color: black; /* Asegúrate de que el texto sea visible */
+min-height: 100vh; /* Asegura que ocupe al menos la altura completa de la pantalla */
+}
+.colorAdmin {
+  background-color: rgb(204, 202, 202);
+}
+.colorTab {
+  background-color: #fdfdfd;
+}
+
+/*
+ * Header
+ */
+ .cover-container1 {
+  margin-top:0;
+  background-size: cover; /* Para que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  min-height: 100vh; /* Asegura que ocupe al menos la altura completa de la pantalla */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+.colon-link {
+  /* vertical-align: middle; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:0.5rem;
+}
+
+.cover-p {
+  font-size: 1.30rem; /* Tamaño del texto de la clase lead */
+  font-weight: 500; /* Un poco más grueso que normal, pero no bold */
+  line-height: 1.5;
+}
+/* Custom default button */
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+.btn-outline-darkgray {
+  color: black;/*#2c2c2c;  Un gris más oscuro que el de secondary */
+  border-color: #3a3a3a;
+}
+
+.btn-outline-darkgray:hover,
+.btn-outline-darkgray:focus {
+  color: white;
+  background-color: #5a5c5d; /* Cambia el fondo al gris oscuro en hover */
+  border-color: #4a4a4a;
+}
+.btn-outline-greenNomades {
+  color: #137f4d;/*#2c2c2c;  Un gris más oscuro que el de secondary */
+  border-color: #198754;
+}
+
+.btn-outline-greenNomades:hover,
+.btn-outline-greenNomades:focus {
+  color: black;
+  background-color: rgba(90, 255, 255, 0.5); /* Cambia el fondo al gris oscuro en hover */
+  border-color: rgb(90, 255, 255);
+}
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #312f2f;
+  border-bottom-color: #312f2f;
+}
+.caption-nav {
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  -webkit-backdrop-filter: blur(10px); /* Efecto de desenfoque para Safari */
+  padding: 0.2rem;
+  border-radius: 5px; /* Bordes redondeados */
+  color: black; /* Asegúrate de que el texto sea visible */
+}
+.caption-title {
+  z-index: 10;
+  max-width: 60vw;
+  background: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  -webkit-backdrop-filter: blur(10px); /* Efecto de desenfoque para Safari */
+  padding: 1rem;
+  border-radius: 8px; /* Bordes redondeados */
+  color: black; /* Asegúrate de que el texto sea visible */
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  z-index: 1500;
+  width: 15vw;
+  padding: 18px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #3a3a3a;
+  --_m: 
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1.5s infinite linear;
+}
+@keyframes l3 {to{transform: rotate(1turn)}}
+
+.loaderFont {
+  color: #3a3a3a;
+  font-size: 2rem; /* Tamaño del texto de la clase lead */
+  font-weight: 600; /* Un poco más grueso que normal, pero no bold */
+  line-height: 1.6;
+}
+
+@media (max-width: 768px){
+  .loader {
+    width: 30vw;
+   padding: 10px;
+  }
+  .loaderFont {
+    font-size: 1.5rem; /* Tamaño del texto de la clase lead */
+  font-weight: 500; /* Un poco más grueso que normal, pero no bold */
+  line-height: 1.5;
+  }
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+ 
+}
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}

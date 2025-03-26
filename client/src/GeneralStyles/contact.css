@@ -1,0 +1,22 @@
+.contactContainer {
+    left:0;
+    margin-top:5%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    
+  }
+  @media (max-width: 768px) {
+    .contactContainer {
+      min-width: 80%;
+      max-width: 90%;
+    }
+  }
+
+  .coverMail {
+    margin-top:0;
+    z-index: 10;
+    padding: 0.2rem;
+    color: black; /* Asegúrate de que el texto sea visible */
+  min-height: 100vh; /* Asegura que ocupe al menos la altura completa de la pantalla */
+  }

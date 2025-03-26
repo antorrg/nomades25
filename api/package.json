@@ -1,0 +1,68 @@
+{
+  "name": "nomadesreact",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "creationDate": "2025-03-25",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "lint": "standard -fix.",
+    "test": "cross-env NODE_ENV=test jest --detectOpenHandles",
+    "test:cov": "cross-env NODE_ENV=test jest --detectOpenHandles run: 01 run: 10 --coverage",
+    "start": "cross-env NODE_ENV=production node server/server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^2.5.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.0",
+    "express-validation": "^4.1.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cache": "^5.1.2",
+    "node-mailer": "^0.1.1",
+    "nodemailer": "^6.9.16",
+    "pg": "^8.13.0",
+    "pg-hstore": "^2.3.4",
+    "postgres": "^3.4.4",
+    "sequelize": "^6.37.6",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "babel-jest": "^29.7.0",
+    "babel-plugin-transform-import-meta": "^2.2.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "sequelize-cli": "^6.6.2",
+    "standard": "^17.1.2",
+    "supertest": "^7.0.0"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          "@babel/preset-env"
+        ],
+        "plugins": [
+          "babel-plugin-transform-import-meta"
+        ]
+      }
+    }
+  },
+  "engines": {
+    "node": ">=22.14.0",
+    "npm": ">=11.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}
